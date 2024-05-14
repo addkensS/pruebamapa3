@@ -1,0 +1,122 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Establece la fuente del texto */
+    margin: 0; /* Elimina los margenes por defecto */
+    padding: 0; /* Elimina el Padding por defecto */
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #326BB6/*cadetblue*/; /* Color del fondo del encabezado */
+    color: orange; /* Color del texto en el encabezado */
+    padding: 10px; /* Espacio interno del encabezado*/
+    display: flex; /* Utiliza un modelo de caja flexible para el encabezado */
+    justify-content: space-between; /* Centra los elementos horizontalmente*/
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Foto de perfil barra superior*/
+.perfil {
+    width: 80px; /* Establece el ancho de la foto de perfil */
+    height: 80px; /* Establece la altura de la foto de perfil */
+    border-radius: 50%; /* Aplica un borde redondeado para que la foto de perfil sea ciruclar */
+    background-image: url(img/pedro.png); /* imagen como el fondo de la figura */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    /*background-color: white; Establece el color de fondo de la foto de perfil  */
+    margin-left: 10px; /* Aumenta el margen del lado izquierdo */
+}
+
+/* Boton trazar ruta de la barra superior*/
+.atras img{
+    margin-right: 10px; /* Aumenta el margen del lado derecho */
+    width: 60px;
+    height: 60px;
+}
+
+/* Imagen del logo */
+.logo img {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: 25px;
+}
+
+/* Notificaciones */
+.notificaciones { /* Opciones en general */
+    max-width: 550px; /* Ancho máximo para la sección de notificaciones */
+    /*margin: 0 auto;*/ /* Centra la sección horizontalmente */
+    background-color: #BED8E6;
+}
+
+.notificaciones .titulo_notificacion {
+     /* Para alinear la imagen y el texto en línea */
+    margin-bottom: 20px; /* Espacio entre cada notificación */
+    border-bottom: 1px solid #F3F4F5; /* Línea divisoria entre notificaciones */
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: #80B8D6;
+    margin-top: -30px;
+}
+
+
+/* Esto es del icono al lado del titulo "Notificaciones"*/
+.notificaciones .titulo_notificacion img{
+    width: 40px; /* Tamaño de la imagen de perfil */
+    height: 40px;
+    border-radius: 50%; /* Para que la imagen sea circular */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px;
+}
+
+
+/* Notificaciones en especifico*/
+.notificacionx {
+    display: flex; /* Para alinear la imagen y el texto en línea */
+    margin-bottom: 20px; /* Espacio entre cada notificación */
+    border-bottom: 1px solid #F3F4F5; /* Línea divisoria entre notificaciones */
+    padding-bottom: 5px; /* Espacio entre la imagen y la descripción */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.notificacionx img {
+    width: 40px; /* Tamaño de la imagen de perfil */
+    height: 40px;
+    border-radius: 50%; /* Para que la imagen sea circular */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.notificacionx p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+/* Contenedor inferior */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #326BB6 /*cadetblue*/;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Imagenes del contenedor inferior */
+footer img {
+    width: 50px; /* Ancho de las imagenes */
+    height: 50px; /* Alto de las imagenes */
+    margin-left: 30px;
+    margin-right: 30px;
+}

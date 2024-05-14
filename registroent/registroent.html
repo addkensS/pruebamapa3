@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SIN FRONTERAS</title> <!-- Titulo de la pagina -->
+    <link rel="stylesheet" href="styles_ent.css"> <!-- Enlaza el archivo de estilos CSS -->
+
+</head>
+<body>
+
+    <main>
+        <div class="profile-picture">
+            <img src="img/logocompleto.png" alt="Profile Picture">
+        </div>
+        <div class="info-container">
+            <div class="acceder">
+                Registrato Entidad
+            </div>
+            <div class="notehas">
+                ¿Ya te has registrado?
+            </div>
+            <div class="registrateaqui">
+                <a class="registrateaqui" href="../acceso/acceso.html">Inicia sesion aqui</a>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-title"></div>
+                <input type="text" class="info-input" placeholder="Correo electronico . . .">
+            </div>
+            <div class="info-item">
+                <div class="info-title"></div>
+                <input type="text" class="info-input" placeholder="Nombre de la entidad . . .">
+            </div>
+            <div class="info-item">
+                <div class="info-title"></div>
+                <input type="text" class="info-input" placeholder="Numero de telefono . . .">
+            </div>
+            <div class="info-item">
+                <div class="info-title"></div>
+                <input type="text" class="info-input" placeholder="Direccion . . .">
+            </div>
+            <div class="info-item">
+                <div class="info-title"></div>
+                <input type="text" class="info-input" placeholder="Contraseña . . .">
+            </div>
+            
+        </div>
+        <div class="edit-button" id="irAOtroArchivo">
+            <button>REGISTRARSE</button>
+        </div>
+        <script>
+            document.getElementById("irAOtroArchivo").addEventListener("click", function() {
+                window.location.href = "../acceso/acceso.html";
+            });
+        </script>
+    </main>
+
+    <!-- Opciones al pie de pagina: Leyes, comunidad, notificaciones, sos -->
+    
+</body>
+</html>

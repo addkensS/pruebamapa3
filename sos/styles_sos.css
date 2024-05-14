@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    margin: 0; /* Elimina los margenes por defecto */
+    padding: 0; /* Elimina el Padding por defecto */
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #326BB6/*cadetblue*/; /* Color del fondo del encabezado */
+    color: orange; /* Color del texto en el encabezado */
+    padding: 10px; /* Espacio interno del encabezado*/
+    display: flex; /* Utiliza un modelo de caja flexible para el encabezado */
+    justify-content: space-between; /* Centra los elementos horizontalmente*/
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Foto de perfil barra superior*/
+.perfil {
+    width: 80px; /* Establece el ancho de la foto de perfil */
+    height: 80px; /* Establece la altura de la foto de perfil */
+    border-radius: 50%; /* Aplica un borde redondeado para que la foto de perfil sea ciruclar */
+    background-image: url(img/pedro.png); /* imagen como el fondo de la figura */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    /*background-color: white; Establece el color de fondo de la foto de perfil  */
+    margin-left: 10px; /* Aumenta el margen del lado izquierdo */
+}
+
+/* Boton trazar ruta de la barra superior*/
+.atras img{
+    margin-right: 10px; /* Aumenta el margen del lado derecho */
+    width: 60px;
+    height: 60px;
+}
+
+/* Imagen del logo */
+.logo img {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: 25px;
+}
+
+/* BOTON SOS */
+/*Para poder centrar el boton con respecto a la pagina*/
+main {
+    height: 100%;
+    margin: 0;
+    display: flex; /* Convierte el cuerpo y el HTML en un contenedor flex para centrar vertical y horizontalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centra el contenido dentro del contenedor */
+main .contenedor_boton_sos {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    height: 90%;
+    max-height: 400px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+/* Estilos del circulo */
+main .boton_sos {
+    width: 100px;
+    padding-top: 100%;
+    height: 100px;
+    padding-left: 100%;
+    position: relative;
+    background-color: #B63232;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    animation: pulse 1s infinite alternate; /*animacion de pulsacion*/
+    cursor: pointer;
+}
+
+/*Posicion del texto "SOS"*/
+main p {
+    color: white;
+    margin-bottom: 545px;
+    margin-right: 360px;
+    font-size: 130px;
+}
+
+/* Animacion para que el circulo crezca y se encoja*/
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/*Para que se adapte a los tamaños de pantalla*/
+@media (max-width: 768px) {
+    /* Redimensiona el cirulo y el texto */
+    main .boton_sos {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+/* Contenedor inferior */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #326BB6 /*cadetblue*/;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Imagenes del contenedor inferior */
+footer img {
+    width: 50px; /* Ancho de las imagenes */
+    height: 50px; /* Alto de las imagenes */
+    margin-left: 30px;
+    margin-right: 30px;
+}

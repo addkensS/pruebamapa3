@@ -41,7 +41,7 @@ header {
 }
 
 input[type="text"]{
-    width: 150%; /* Cambia el ancho de las barras al 150% del contenedor */
+    width: 100%; /* Cambia el ancho de las barras al 150% del contenedor */
     padding: 5px; /* Cambia el alto de las barras, añadiendo un margen interno */
     margin-bottom: 5px; /* Añade un margen inferior a las barras de busqueda*/
     border: none;
